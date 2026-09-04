@@ -14,6 +14,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Cloudinary.OpenApiClientUtil;
 
+/// <inheritdoc cref="ICloudinaryOpenApiClientUtil" />
 public sealed class CloudinaryOpenApiClientUtil : ICloudinaryOpenApiClientUtil
 {
     private readonly AsyncSingleton<CloudinaryOpenApiClient> _client;

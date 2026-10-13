@@ -25,7 +25,7 @@ public sealed class CloudinaryOpenApiClientUtil : ICloudinaryOpenApiClientUtil
         {
             HttpClient httpClient = await httpClientUtil.Get(token).NoSync();
 
-            var apiKey = configuration.GetValueStrict<string>("Cloudinary:ApiKey");
+            var apiKey = configuration.GetStringStrict("Cloudinary:ApiKey");
             string authHeaderName = configuration["Cloudinary:AuthHeaderName"] ?? "Authorization";
             string authHeaderValueTemplate = configuration["Cloudinary:AuthHeaderValueTemplate"] ?? "Bearer {token}";
             string authHeaderValue = authHeaderValueTemplate.Replace("{token}", apiKey, StringComparison.Ordinal);

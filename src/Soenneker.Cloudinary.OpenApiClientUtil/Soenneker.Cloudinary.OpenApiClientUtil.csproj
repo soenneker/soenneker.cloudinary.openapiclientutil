@@ -46,6 +46,6 @@
     <ItemGroup>
         <PackageReference Include="Soenneker.Kiota.GenericAuthenticationProvider" Version="11.0.60" />
         <PackageReference Include="Soenneker.Cloudinary.HttpClients" Version="11.0.169" />
-        <PackageReference Include="Soenneker.Cloudinary.OpenApiClient" Version="11.0.83" />
+        <PackageReference Include="Soenneker.Cloudinary.OpenApiClient" Version="11.0.84" />
     </ItemGroup>
 </Project>
